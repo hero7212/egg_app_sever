@@ -13,7 +13,6 @@ class ProductsController extends Controller {
 	
 	async new() {
 		const { ctx } = this
-		ctx.state.csrf = ctx.csrf
 		await ctx.render('products/new.ejs')
 	}
 
