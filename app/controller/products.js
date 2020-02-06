@@ -18,7 +18,11 @@ class ProductsController extends Controller {
 			person: {
 				name: '沈剑心',
 				age: 17
-			}
+			},
+			htmlTags: `<div>
+				<h5>这是一个h5标签</h5>
+				<p>这是一段剪短的介绍</p>
+			</div>`
 		})
   }
 }
