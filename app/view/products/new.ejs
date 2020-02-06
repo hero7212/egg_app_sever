@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增</title>
+</head>
+<body>
+    <form action="/products/create" method="post">
+        <input type="hidden" name="_csrf" value="<%= csrf %>">
+        <ul>
+            <li><input placeholder="请输入名字" name="name"/></li>
+            <li><input placeholder="请输入价格" name="price"/></li>
+            <li><input type="submit" value="提交"/></li>
+        </ul>
+    </form>
+</body>
+</html>

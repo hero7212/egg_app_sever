@@ -9,4 +9,5 @@ module.exports = app => {
   router.get('/new', controller.home.new);
   router.get('/products', controller.products.index);
   router.get('/products/new', controller.products.new);
+  router.post('/products/create', controller.products.create);
 };
